@@ -1,0 +1,215 @@
+{
+  "rows_before_clean": 32561,
+  "rows_after_clean": 30162,
+  "rows_dropped": 2399,
+  "training_samples": 24129,
+  "test_samples": 6033,
+  "algorithm": "RandomForestClassifier",
+  "label": "salary",
+  "classes": [
+    "<=50K",
+    ">50K"
+  ],
+  "positive_class": ">50K",
+  "feature_columns": [
+    "age",
+    "workclass",
+    "fnlgt",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country"
+  ],
+  "categorical_features": [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"
+  ],
+  "numerical_features": [
+    "age",
+    "fnlgt",
+    "education-num",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "random_forest": {
+    "accuracy": 0.8496602022211172,
+    "precision": 0.730799069045772,
+    "recall": 0.6271637816245007,
+    "f1": 0.675026872088857
+  },
+  "logistic_regression": {
+    "accuracy": 0.8471738770097795,
+    "precision": 0.7338709677419355,
+    "recall": 0.6058588548601864,
+    "f1": 0.6637490882567469
+  },
+  "logistic_regression_note": "StandardScaler is fit on the encoded training matrix inside the logistic regression pipeline only.",
+  "selected": {
+    "accuracy": 0.8496602022211172,
+    "precision": 0.730799069045772,
+    "recall": 0.6271637816245007,
+    "f1": 0.675026872088857
+  },
+  "slice_feature": "education",
+  "slices": [
+    {
+      "feature": "education",
+      "category": "10th",
+      "n": 156,
+      "accuracy": 0.9551282051282052,
+      "precision": 0.75,
+      "recall": 0.3333333333333333,
+      "f1": 0.46153846153846156
+    },
+    {
+      "feature": "education",
+      "category": "11th",
+      "n": 203,
+      "accuracy": 0.9359605911330049,
+      "precision": 0.75,
+      "recall": 0.2,
+      "f1": 0.3157894736842105
+    },
+    {
+      "feature": "education",
+      "category": "12th",
+      "n": 90,
+      "accuracy": 0.9555555555555556,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "feature": "education",
+      "category": "1st-4th",
+      "n": 27,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "feature": "education",
+      "category": "5th-6th",
+      "n": 58,
+      "accuracy": 0.9655172413793104,
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "feature": "education",
+      "category": "7th-8th",
+      "n": 107,
+      "accuracy": 0.9626168224299065,
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333333333333333
+    },
+    {
+      "feature": "education",
+      "category": "9th",
+      "n": 95,
+      "accuracy": 0.9263157894736842,
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "feature": "education",
+      "category": "Assoc-acdm",
+      "n": 195,
+      "accuracy": 0.8256410256410256,
+      "precision": 0.6666666666666666,
+      "recall": 0.5217391304347826,
+      "f1": 0.5853658536585366
+    },
+    {
+      "feature": "education",
+      "category": "Assoc-voc",
+      "n": 222,
+      "accuracy": 0.8018018018018018,
+      "precision": 0.7037037037037037,
+      "recall": 0.5757575757575758,
+      "f1": 0.6333333333333333
+    },
+    {
+      "feature": "education",
+      "category": "Bachelors",
+      "n": 1010,
+      "accuracy": 0.7960396039603961,
+      "precision": 0.7547169811320755,
+      "recall": 0.7582938388625592,
+      "f1": 0.7565011820330969
+    },
+    {
+      "feature": "education",
+      "category": "Doctorate",
+      "n": 64,
+      "accuracy": 0.75,
+      "precision": 0.8367346938775511,
+      "recall": 0.8367346938775511,
+      "f1": 0.8367346938775511
+    },
+    {
+      "feature": "education",
+      "category": "HS-grad",
+      "n": 2023,
+      "accuracy": 0.8601087493821058,
+      "precision": 0.6095238095238096,
+      "recall": 0.3890577507598784,
+      "f1": 0.4749536178107607
+    },
+    {
+      "feature": "education",
+      "category": "Masters",
+      "n": 334,
+      "accuracy": 0.7664670658682635,
+      "precision": 0.8058252427184466,
+      "recall": 0.8137254901960784,
+      "f1": 0.8097560975609757
+    },
+    {
+      "feature": "education",
+      "category": "Preschool",
+      "n": 8,
+      "accuracy": 0.875,
+      "precision": 0.0,
+      "recall": 1.0,
+      "f1": 0.0
+    },
+    {
+      "feature": "education",
+      "category": "Prof-school",
+      "n": 108,
+      "accuracy": 0.8703703703703703,
+      "precision": 0.8817204301075269,
+      "recall": 0.9647058823529412,
+      "f1": 0.9213483146067416
+    },
+    {
+      "feature": "education",
+      "category": "Some-college",
+      "n": 1333,
+      "accuracy": 0.854463615903976,
+      "precision": 0.6601941747572816,
+      "recall": 0.5230769230769231,
+      "f1": 0.5836909871244635
+    }
+  ],
+  "model_path": "/Users/rahulkumar/Documents/GitHub/UcityMachine_learning_model_fastapi/model/model.pkl"
+}
