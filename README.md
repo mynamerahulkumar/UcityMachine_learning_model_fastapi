@@ -61,7 +61,7 @@ Training cleans the CSV in memory, splits 80/20 with `random_state=42` and strat
 └── requirements.txt
 ```
 
-Run every command below from this directory. It is the Git repository root. The GitHub remote is `https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git`. This folder has not been pushed yet, so GitHub Actions has not run.
+Run every command below from this directory. It is the Git repository root. The GitHub repository is https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git.
 
 ## Python environment setup
 
@@ -146,7 +146,7 @@ The 11 November 2026 run printed `Your test cases look good!` and exited 0.
 
 ## GitHub Actions CI
 
-`.github/workflows/ci.yml` runs on pushes and pull requests to `main`. The job `pytest-and-flake8` installs this requirements file on Python 3.13, then runs `pytest -v` and `flake8 .`. That job has not run on GitHub yet. This directory is the repository root, and the remote is `https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git`, but there are no commits to push until you create them. The step-by-step check is in `startup.md`.
+`.github/workflows/ci.yml` runs on pushes and pull requests to `main`. The job `pytest-and-flake8` installs this requirements file on Python 3.13, then runs `pytest -v` and `flake8 .`. The repository is https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git. The step-by-step check is in `startup.md`.
 
 `model/model.pkl` is required for the tests. `.gitignore` ignores `*.pkl`, so stage it explicitly before the first push:
 
@@ -208,7 +208,7 @@ The positive class is the minority label, so accuracy overstates how often `>50K
 
 https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git
 
-The remote is configured. `main` has no commits yet, so the GitHub repository is empty until you push. Do not use `https://github.com/mynamerahulkumar/ucityproject-alls.git` as this project's URL.
+The remote `origin` points at this repository. Use this URL for the submission. Do not use https://github.com/mynamerahulkumar/ucityproject-alls.git.
 
 ## Branch protection
 
