@@ -6,8 +6,6 @@ The classifier is a scikit-learn random forest trained on `data/census.csv`. A s
 
 This repository has not been deployed. There is no public URL yet.
 
-How the pieces fit together is in [architecture.md](architecture.md). The command checklist that maps each step to the rubric is in [startup.md](startup.md).
-
 ## Problem statement
 
 The task is to classify the `salary` column of the US Census Income (Adult) extract. The two labels are `<=50K` and `>50K`. The finished project trains the model, writes slice metrics, documents the model, and exposes inference over HTTP.
@@ -55,8 +53,6 @@ Training cleans the CSV in memory, splits 80/20 with `random_state=42` and strat
 ├── model_card.md
 ├── model_card_template.md
 ├── DEPLOYMENT.md
-├── architecture.md
-├── startup.md
 ├── render.yaml
 └── requirements.txt
 ```
@@ -146,7 +142,7 @@ The 11 November 2026 run printed `Your test cases look good!` and exited 0.
 
 ## GitHub Actions CI
 
-`.github/workflows/ci.yml` runs on pushes and pull requests to `main`. The job `pytest-and-flake8` installs this requirements file on Python 3.13, then runs `pytest -v` and `flake8 .`. The repository is https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git. The step-by-step check is in `startup.md`.
+`.github/workflows/ci.yml` runs on pushes and pull requests to `main`. The job `pytest-and-flake8` installs this requirements file on Python 3.13, then runs `pytest -v` and `flake8 .`. The repository is https://github.com/mynamerahulkumar/UcityMachine_learning_model_fastapi.git.
 
 `model/model.pkl` is required for the tests. `.gitignore` ignores `*.pkl`, so stage it explicitly before the first push:
 
