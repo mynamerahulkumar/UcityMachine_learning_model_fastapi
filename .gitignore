@@ -178,11 +178,16 @@ Thumbs.db
 temp/
 tmp/
 
-# Screenshots (unless specifically needed)
+# Screenshots. Extra PNGs stay ignored. The five rubric files are tracked.
 screenshots/*.png
 screenshots/*.jpg
 screenshots/*.jpeg
 !screenshots/.gitkeep
+!screenshots/example.png
+!screenshots/continuous_integration.png
+!screenshots/continuous_deployment.png
+!screenshots/live_get.png
+!screenshots/live_post.png
 
 # API keys and secrets
 *.key
